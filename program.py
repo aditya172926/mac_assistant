@@ -4,7 +4,14 @@ import speech_recognition as sr
 from datetime import datetime
 from selenium import webdriver
 
-
+print('=============================================================\n\n')
+print('\t\tRules to follow while giving commands')
+print('\n1) To open application:- "Open Application <application name>')
+print('\n2) To perform a google search:- "Search web for <anything>"')
+print('\n3) To perform google search for images:- "Search web for images of <anything>"')
+print('\n\nThere is no time limit, speak when you are prompted.')
+print('Use headphone for better results')
+print('\n\n')
 def application(name):
     if len(name)>1:
         name = ' '.join(name)

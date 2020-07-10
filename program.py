@@ -17,7 +17,8 @@ def search_web(searchtype, query):
     driver = webdriver.Chrome()
     driver.maximize_window()
     if searchtype != 'image':
-        driver.get(query)
+        search_results = 'https://www.google.com/search?q='+query+'&rlz=1C5CHFA_enUS860US860&oq=washing&aqs=chrome.0.0j69i57j46j0j69i60j69i65j69i60l2.2604j0j7&sourceid=chrome&ie=UTF-8'
+        driver.get(search_results)
     else:
         image_search = 'https://www.google.com/search?q='+query+'&rlz=1C5CHFA_enUS860US860&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjqg__ehr3qAhUZyjgGHbcJDrgQ_AUoAXoECAwQAw&biw=1440&bih=788'
         driver.get(image_search)

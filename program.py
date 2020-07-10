@@ -11,7 +11,9 @@ print('\n2) To perform a google search:- "Search web for <anything>"')
 print('\n3) To perform google search for images:- "Search web for images of <anything>"')
 print('\n\nThere is no time limit, speak when you are prompted.')
 print('Use headphone for better results')
+print('=============================================================')
 print('\n\n')
+
 def application(name):
     if len(name)>1:
         name = ' '.join(name)

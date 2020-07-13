@@ -1,18 +1,22 @@
 #Start the virtual environment to run this program
 import os
 import speech_recognition as sr
+import webbrowser
 from datetime import datetime
 from selenium import webdriver
 
 print('=============================================================\n\n')
 print('\t\tRules to follow while giving commands')
-print('\n1) To open application:- "Open Application <application name>')
-print('\n2) To perform a google search:- "Search web for <anything>"')
-print('\n3) To perform google search for images:- "Search web for images of <anything>"')
+print('\n1) To open application say:- "Open Application <application name>')
+print('\n2) To perform a google search say:- "Search web for <anything>"')
+print('\n3) To perform google search for images say:- "Search web for images of <anything>"')
+print('\n4) To quit say:- "Stop"')
 print('\n\nThere is no time limit, speak when you are prompted.')
 print('Use headphone for better results')
 print('=============================================================')
 print('\n\n')
+
+
 
 def application(name):
     if len(name)>1:
@@ -23,14 +27,14 @@ def application(name):
     os.system(command)
 
 def search_web(searchtype, query):
-    driver = webdriver.Chrome()
-    driver.maximize_window()
+    # driver = webdriver.Chrome()
+    # driver.maximize_window()
     if searchtype != 'image':
         search_results = 'https://www.google.com/search?q='+query+'&rlz=1C5CHFA_enUS860US860&oq=washing&aqs=chrome.0.0j69i57j46j0j69i60j69i65j69i60l2.2604j0j7&sourceid=chrome&ie=UTF-8'
-        driver.get(search_results)
+        webbrowser.open(search_results)
     else:
         image_search = 'https://www.google.com/search?q='+query+'&rlz=1C5CHFA_enUS860US860&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjqg__ehr3qAhUZyjgGHbcJDrgQ_AUoAXoECAwQAw&biw=1440&bih=788'
-        driver.get(image_search)
+        webbrowser.open(image_search)
 
 keywords = ['application', 'folder', 'desktop', 'open']
 web_search = ['search', 'web']
@@ -80,5 +84,3 @@ with sr.Microphone() as source:
                     search_web(searchtype, query)
         except:
             pass
-
-# os.system('open "lib"')

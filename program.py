@@ -3,7 +3,7 @@ import os
 import speech_recognition as sr
 import webbrowser
 from datetime import datetime
-from selenium import webdriver
+from googlesearch import search
 
 print('=============================================================\n\n')
 print('\t\tRules to follow while giving commands')
@@ -27,14 +27,19 @@ def application(name):
     os.system(command)
 
 def search_web(searchtype, query):
-    # driver = webdriver.Chrome()
-    # driver.maximize_window()
     if searchtype != 'image':
         search_results = 'https://www.google.com/search?q='+query+'&rlz=1C5CHFA_enUS860US860&oq=washing&aqs=chrome.0.0j69i57j46j0j69i60j69i65j69i60l2.2604j0j7&sourceid=chrome&ie=UTF-8'
         webbrowser.open(search_results)
     else:
         image_search = 'https://www.google.com/search?q='+query+'&rlz=1C5CHFA_enUS860US860&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjqg__ehr3qAhUZyjgGHbcJDrgQ_AUoAXoECAwQAw&biw=1440&bih=788'
         webbrowser.open(image_search)
+
+def open_meetings(query):
+    print('called')
+    print(query)
+    for j in search(query[0], tld='com', num=2, stop=1, pause=2):
+        print(j)
+        webbrowser.open(j)
 
 keywords = ['application', 'folder', 'desktop', 'open']
 web_search = ['search', 'web']
@@ -67,6 +72,7 @@ with sr.Microphone() as source:
             if 'application' in spoken_keyword1:
                 spoken_words = audio_spoken.split()
                 application(spoken_words[2:])
+                
             if 'search' in spoken_keyword2 and 'web' in spoken_keyword2:
                 spoken_words = audio_spoken.split()
                 #search web for images of ----
@@ -76,6 +82,12 @@ with sr.Microphone() as source:
                     query = '+'.join(to_search)
                     print(query)
                     search_web(searchtype, query)
+                #To search websites say: Search website linkedin.com
+                elif 'website' in spoken_words:
+                    searchtype = 'website'
+                    to_search = spoken_words[-1:]
+                    print('Website to visit: ', to_search)
+                    open_meetings(to_search)
                 else:
                     searchtype = 'link'
                     to_search = spoken_words[4:]

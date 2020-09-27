@@ -1,0 +1,49 @@
+
+
+2020-07-28 16:39:18.581051
+so so I want to write a blog using this voice to text recognition program that I just made and I think it will be really good if I can do that you know why you know why because I actually my name writing the blog there are a number of people I've met on LinkedIn and some other blogging website saying that
+
+2020-07-28 16:41:32.523810
+yes I was saying they were saying that write a blog in such a way that you are talking to the person right in front of you but the problem is my name writing I don't get the feel like I'm not at that level where I get the feeling that I'm actually talking to the person right in front of me so I actually have to talk in front of him to get the feel that yes I am talking to you but intern I am talking to you why my blog that's why I am using this voice to text recognition to indirectly talk to you with which means I am talking to you but my voice is dynamically converted into text which will be posted on my blog to this blog is about how to make a blog using your voice because your voice should be the thing that actually cause 3 you know what I'm trying to say why are blocked what is the point it off for the point of bloggers that the text should have a voice the voice should you read the text and in your mind you should get that voice that I am trying to that is trying to reach your ears as exactly what I'm trying to do I am just trying to do my approach will be like we both of us are Google meet both of us or like talking to each other if I can master My speaking skills that is much more faster than master in my writing skills so and with my program I know a bit of programming ok so with my program here I can convert my speech to text because of which I am talking to indirectly so that will be all and let's see whether I successfully converted my voice to text or not
+
+2020-08-01 12:46:17.411959
+where is my blog
+
+2020-08-01 12:47:30.733533
+ok continuing on the previous blog does it is that not much kind of thing it's a simple and is a simple project with very simple idea that can solve unnecessary communications and delays of what a developer can call a change request while Making a website or app design Before starting anything developer gets on to the website design, to start coding the website application he has a nice look at the design like what are the colours what is the theme how does the website or the application look like this and that he will start working
+
+2020-08-01 12:55:32.637097
+likha
+
+2020-08-01 12:55:56.803433
+time chahie
+
+2020-08-01 12:58:33.316410
+that you are a developer work and it hasn't got you covered all the steps we had a look at the design of the like you know what colours to use Innova class must be used what is the theme and success that your content developer that the design the screams the screenshots and was a wooden on Google Drive OK Google drive click and try to like implicate improvement sorry implement that same thing when you are calling is going to face styling because you cannot get the exact value of border border radius is going to be a what does colour for going to be the different shades of blue colour of different Hexa RGB values for a blue colour goes something something goes for every single colour on the design but you don't know the address
+
+2020-08-01 13:00:46.596034
+now you at the front end developer have you can the designs and you see the template the colours that are used when you get a picture of how the final website or the application must look like and then used in start coding is going to the design was not given on some some specific Unix platform likes the designs are given to use Google Drive
+
+2020-08-01 13:03:02.197571
+nice designs on the Google Drive problems when it says is this time you will have to assume what will it up border radius of a particular component of the thickness of a particular card you will have to assume that this shade of yellow colour is what the client wants but extremely is actually provided you with hex code for a particular color?
+
+2020-08-01 13:07:44.203708
+it will it is the mode easier for you as a front end developer and for a client that he provides you with exact values of those colours its value that is easily put in your CSS style is inline styling
+
+2020-08-01 13:08:47.691884
+now you see whether problem arises with the client and frontend Developers it's the unnecessary communication just imagine that you made every single design the completed all the screen that were given review on Google Drive you have done the code and now you submit your work to the client and after SS accessing and seeing all the work that have done client finally says that the colour of this element is not right please check it again refer to the design I sent you on Google Drive
+
+2020-08-01 13:09:27.834974
+what's the time doesn't understand that the design that you actually made one referred from the Google Drive and unless and until he provides you with those exact hexadecimal hex values of what those colours are there is the higher probability that the next submission will also be incorrect 1
+
+2020-08-01 13:10:10.434940
+that is the unnecessary communication and the unnecessary delay between your payment and if you are a client that means of your final website or application this program is a very simple logic to identify all the colours that are in your design and provide exact X1 on the currently this program is under development but has predicted application pending application in saving your time 
+
+2020-08-01 13:10:33.372741
+Bhag ja rahe ho
+
+2020-08-01 13:11:06.549919
+what you have to do is very simple if the client gives you short design screen lets you on WhatsApp on Google drive then you are the one
+
+2020-08-01 13:12:39.571993
+can you want someone who needs to see that the colours colours because there are hundreds of things if you as your home that can go wrong assumption this program is following the colours you need to know what are the exact text or RGB values of a particular colour procedure the way the program works is simply that download the picture you want physically download that screenshot given you on the Google Drive save it in a desktop run this program run this program on that particular screenshot that you want the colour from and then double-click on the colour picture it will provide you think that this project does not have much industrial use of might not impact the lives as such but if you think that this solves your problem of unnecessary timely dealing meetings overnight meetings with your clients

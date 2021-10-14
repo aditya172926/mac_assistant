@@ -4,6 +4,7 @@ import speech_recognition as sr
 import webbrowser
 from datetime import datetime
 from googlesearch import search
+from sys import platform
 
 print('=============================================================\n\n')
 print('\t\tRules to follow while giving commands')
@@ -16,14 +17,18 @@ print('Use headphone for better results')
 print('=============================================================')
 print('\n\n')
 
-
-
 def application(name):
+    # opening applications compatible with multiple OS
     if len(name)>1:
         name = ' '.join(name)
     else:
         name = str(name[0])
-    command = 'open -a "{}"'.format(str(name))
+    if platform == "linux" or platform == "linux2": # linux OS
+        command = str(name)
+    elif platform == "darwin":
+        command = 'open -a "{}"'.format(str(name))
+    else: #windows OS that is platform == "win32"
+        command = 'start {}'.format(str(name))
     os.system(command)
 
 def search_web(searchtype, query):
